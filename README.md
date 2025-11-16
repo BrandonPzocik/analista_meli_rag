@@ -1,14 +1,12 @@
-### Analista de Reportes Financieros (MercadoLibre)
-
-# MELI Analyst Assistant API - LangChain
+# Analista de Reportes Financieros (MercadoLibre)
 
 Un asistente de análisis financiero especializado en reportes de MercadoLibre (MELI) basado en RAG (Retrieval-Augmented Generation) con integración de IA local vía Ollama.
 
-## 🚀 Descripción
+## Descripción
 
 Esta API permite a inversores y analistas financieros consultar información específica de reportes financieros de MercadoLibre (MELI) de manera interactiva. Utiliza un modelo de lenguaje local (Ollama) y embeddings para recuperar fragmentos relevantes del documento y generar respuestas precisas basadas únicamente en el contenido del reporte.
 
-## 📋 Características
+## Características
 
 - **Análisis financiero especializado**: Responde preguntas sobre reportes financieros de MercadoLibre.
 - **Sistema RAG (Retrieval-Augmented Generation)**: Recupera información del documento antes de generar la respuesta.
@@ -17,7 +15,7 @@ Esta API permite a inversores y analistas financieros consultar información esp
 - **API REST**: Diseñada para integrarse fácilmente con interfaces web.
 - **Soporte de CORS**: Configurada para permitir conexiones desde `http://localhost:5173`.
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - **Python 3.10+**
 - **FastAPI**: Framework web para la API.
@@ -27,7 +25,7 @@ Esta API permite a inversores y analistas financieros consultar información esp
 - **PyPDF2**: Carga y procesamiento de documentos PDF.
 - **FastAPI CORS Middleware**: Gestión de solicitudes entre dominios.
 
-## 📦 Dependencias
+## Dependencias
 
 ```txt
 langchain-community
@@ -56,6 +54,34 @@ python-multipart
 
 - **Tamaño del fragmento**: 3000 caracteres
 - **Superposición**: 100 caracteres
+
+## 📥 Instrucciones de Instalación
+
+Para que un tercero pueda clonar el repositorio e instalar todas las dependencias necesarias, sigue estos pasos:
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/tu-usuario/meli-analyst-assistant.git
+cd meli-analyst-assistant
+```
+
+### 2. Crear un entorno virtual
+
+```bash
+python -m venv venv
+source venv/bin/activate        # Linux/macOS
+# o
+venv\Scripts\activate          # Windows
+```
+
+### 3. Instalar las dependencias
+
+Asegúrate de que el archivo requirements.txt esté presente en la raíz del proyecto. Luego ejecuta:
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Endpoints
 
