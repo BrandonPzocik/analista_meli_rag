@@ -63,7 +63,8 @@ Para que un tercero pueda clonar el repositorio e instalar todas las dependencia
 
 ```bash
 git clone https://github.com/tu-usuario/meli-analyst-assistant.git
-cd meli-analyst-assistant
+cd analista_meli_rag
+cd backend
 ```
 
 ### 2. Crear un entorno virtual
@@ -73,6 +74,11 @@ python -m venv venv
 source venv/bin/activate        # Linux/macOS
 # o
 venv\Scripts\activate          # Windows
+luego hacemos
+uvicorn main:app --port 8000
+luego abrimos otra consola y hacemos:
+cd frontend
+npm run dev 
 ```
 
 ### 3. Instalar las dependencias
